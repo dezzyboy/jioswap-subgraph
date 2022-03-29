@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jioswap-finance/jioswap-subgraph.git"
+    "url": "git+https://github.com/jioswap/jioswap-subgraph.git"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "0.20.0",
