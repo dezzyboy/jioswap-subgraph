@@ -1,5 +1,5 @@
 specVersion: 0.0.4
-description: An automated market maker for pegged value crypto assets
+description: A multi-chain automated market maker for pegged value crypto assets
 schema:
   file: ./schema.graphql
 dataSources:
@@ -10,10 +10,10 @@ dataSources:
     source:
       address: "0xE22103552561980d6880DDeff01fC39823aD68b5"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 46580
+      startBlock: 68380
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
@@ -61,10 +61,10 @@ dataSources:
     source:
       address: "0xF32Ae1FDcD8128d57aB748B042c2f79245bb58E6"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 46580
+      startBlock: 68380
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
