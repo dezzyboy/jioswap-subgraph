@@ -6,7 +6,7 @@ dataSources:
 
   - kind: ethereum/contract
     name: D4Pool
-    network: rinkeby
+    network: godwoken
     source:
       address: "0xA322D0b95c4F051416d8c6B15Ad189152C43839A"
       abi: SwapFlashLoanNoWithdrawFee
@@ -57,7 +57,7 @@ dataSources:
 
   - kind: ethereum/contract
     name: USDPoolV2
-    network: rinkeby
+    network: godwoken
     source:
       address: "0xF32Ae1FDcD8128d57aB748B042c2f79245bb58E6"
       abi: SwapFlashLoanNoWithdrawFee
