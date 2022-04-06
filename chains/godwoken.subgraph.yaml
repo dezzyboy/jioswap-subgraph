@@ -8,7 +8,7 @@ dataSources:
     name: D4Pool
     network: godwoken
     source:
-      address: "0xA322D0b95c4F051416d8c6B15Ad189152C43839A"
+      address: "0xE22103552561980d6880DDeff01fC39823aD68b5"
       abi: SwapFlashLoanNoWithdrawFee
       startBlock: 68380
     mapping:
