@@ -41,7 +41,6 @@ export function getOrCreateSwap(
 
     swap.swapFee = info.swapFee
     swap.adminFee = info.adminFee
-    swap.withdrawFee = info.withdrawFee
 
     swap.virtualPrice = info.virtualPrice
 
@@ -129,7 +128,6 @@ export function getOrCreateSwapNoWithdrawFee(
 
     swap.swapFee = info.swapFee
     swap.adminFee = info.adminFee
-    swap.withdrawFee = info.withdrawFee
 
     swap.virtualPrice = info.virtualPrice
 

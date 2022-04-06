@@ -33,7 +33,6 @@ type Swap @entity {
 
   swapFee: BigInt!
   adminFee: BigInt!
-  withdrawFee: BigInt!
 
   virtualPrice: BigInt!
 
@@ -100,16 +99,6 @@ type NewAdminFeeEvent implements SwapEvent @entity {
 }
 
 type NewSwapFeeEvent implements SwapEvent @entity {
-  id: ID!
-  swap: Swap!
-  newFee: BigInt!
-
-  block: BigInt!
-  timestamp: BigInt!
-  transaction: Bytes!
-}
-
-type NewWithdrawFeeEvent implements SwapEvent @entity {
   id: ID!
   swap: Swap!
   newFee: BigInt!
