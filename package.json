@@ -8,6 +8,8 @@
     "build": "graph build",
     "init:godwoken": "cat chains/godwoken.subgraph.yaml > subgraph.yaml",
     "init:rinkeby": "cat chains/rinkeby.subgraph.yaml > subgraph.yaml",
+    "init:bsc": "cat chains/bsc.subgraph.yaml > subgraph.yaml",
+    "init:ftm": "cat chains/ftm.subgraph.yaml > subgraph.yaml",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ jioswap/jioswap",
     "create-local": "graph create --node http://localhost:8020/ jioswap/jioswap",
     "remove-local": "graph remove --node http://localhost:8020/ jioswap/jioswap",
