@@ -9,6 +9,7 @@ This subgraph provides information about jioswap liquidity pools.
 ### Build
 
 ```bash
+npm run init:<network>
 npm run codegen
 npm run build
 ```
@@ -19,4 +20,3 @@ npm run build
 graph auth https://api.thegraph.com/deploy/ <ACCESS_TOKEN>
 npm run deploy
 ```
-
