@@ -6,11 +6,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: JioUSD4Pool
-    network: godwoken
+    network: meter
     source:
-      address: "0xc3296bA34b268f44B554C48e988eb7b38d4d2D8B"
+      address: "0xcbb5D150A9D1F633eB47AE11070eC59Cb71A6d2f"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 113220
+      startBlock: 16310688
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -57,11 +57,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: JioUSDPool
-    network: godwoken
+    network: meter
     source:
-      address: "0xff29c1123769f38990d31A970532112D584EfE38"
+      address: "0x3c32a20087F31978b2126F32833458033439EC4d"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 113220
+      startBlock: 16310688
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

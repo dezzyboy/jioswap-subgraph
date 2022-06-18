@@ -6,14 +6,15 @@
     "lint:fix": "eslint src/ --fix && prettier --write src/**/*.ts",
     "codegen": "graph codegen",
     "build": "graph build",
+    "init:aurora": "cat chains/aurora.subgraph.yaml > subgraph.yaml",
     "init:godwoken": "cat chains/godwoken.subgraph.yaml > subgraph.yaml",
     "init:rinkeby": "cat chains/rinkeby.subgraph.yaml > subgraph.yaml",
     "init:bsc": "cat chains/bsc.subgraph.yaml > subgraph.yaml",
     "init:ftm": "cat chains/ftm.subgraph.yaml > subgraph.yaml",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ jioswap/jioswap",
-    "create-local": "graph create --node http://localhost:8020/ jioswap/jioswap",
-    "remove-local": "graph remove --node http://localhost:8020/ jioswap/jioswap",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 jioswap/jioswap"
+    "deploy": "graph deploy --node http://ggraph.jioswap.finance:8020 --ipfs http://ggraph.jioswap.finance:5001 jioswap-finance/jioswap",
+    "create-local": "graph create --node http://localhost:8020/ jioswap-finance/jioswap",
+    "remove-local": "graph remove --node http://localhost:8020/ jioswap-finance/jioswap",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 jioswap-finance/jioswap"
   },
   "repository": {
     "type": "git",
