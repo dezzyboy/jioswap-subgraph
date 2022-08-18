@@ -11,6 +11,7 @@
     "init:rinkeby": "cat chains/rinkeby.subgraph.yaml > subgraph.yaml",
     "init:bsc": "cat chains/bsc.subgraph.yaml > subgraph.yaml",
     "init:ftm": "cat chains/ftm.subgraph.yaml > subgraph.yaml",
+    "create:deploy": "graph create --node http://ggraph.jioswap.finance:8020 jioswap-finance/jioswap",
     "deploy": "graph deploy --node http://ggraph.jioswap.finance:8020 --ipfs http://ggraph.jioswap.finance:5001 jioswap-finance/jioswap",
     "create-local": "graph create --node http://localhost:8020/ jioswap-finance/jioswap",
     "remove-local": "graph remove --node http://localhost:8020/ jioswap-finance/jioswap",
