@@ -2,7 +2,7 @@ import { Address, BigInt, ethereum } from "@graphprotocol/graph-ts"
 
 import { Swap } from "../../generated/schema"
 // import { SwapFlashLoan } from "../../generated/USDPool/SwapFlashLoan"
-import { SwapFlashLoanNoWithdrawFee } from "../../generated/USDPoolV2/SwapFlashLoanNoWithdrawFee"
+import { SwapFlashLoanNoWithdrawFee } from "../../generated/Jio3fUSDPool/SwapFlashLoanNoWithdrawFee"
 import { getOrCreateToken } from "./token"
 import { getSystemInfo } from "./system"
 

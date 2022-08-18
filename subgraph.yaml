@@ -5,12 +5,12 @@ schema:
 dataSources:
 
   - kind: ethereum/contract
-    name: JioUSD4Pool
+    name: Jio4celUSDPool
     network: godwoken
     source:
-      address: "0xc3296bA34b268f44B554C48e988eb7b38d4d2D8B"
+      address: "0x5abff8841a016631ecB90250D65F53996dda10b0"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 113220
+      startBlock: 92920
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -56,12 +56,12 @@ dataSources:
       file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts
 
   - kind: ethereum/contract
-    name: JioUSDPool
+    name: Jio3fUSDPool
     network: godwoken
     source:
-      address: "0xff29c1123769f38990d31A970532112D584EfE38"
+      address: "0xCF60f11627f2fb412EDe8E674a97c893E8dD73d8"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 113220
+      startBlock: 92920
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
