@@ -5,68 +5,15 @@ schema:
 dataSources:
 
   - kind: ethereum/contract
-    name: JioSUSDMetaPool
-    network: mainnet
+    name: Jio4celUSDPool
+    network: godwoken
     source:
-      address: "0x2c7B39F034888aEb4Bc6A5c0E0695D93835d40E4"
-      abi: MetaSwap
-      startBlock: 15623108
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.6
-      language: wasm/assemblyscript
-      entities:
-        - Swap
-        - SystemInfo
-        - Token
-        - NewAdminFeeEvent
-        - NewSwapFeeEvent
-        - RampAEvent
-        - StopRampAEvent
-        - AddLiquidityEvent
-        - RemoveLiquidityEvent
-        - TokenExchange
-        - TokenExchangeUnderlying
-      abis:
-        - name: MetaSwap
-          file: ./abis/MetaSwap.json
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: NewAdminFee(uint256)
-          handler: handleNewAdminFee
-        - event: NewSwapFee(uint256)
-          handler: handleNewSwapFee
-        - event: RampA(uint256,uint256,uint256,uint256)
-          handler: handleRampA
-        - event: StopRampA(uint256,uint256)
-          handler: handleStopRampA
-        - event: AddLiquidity(indexed address,uint256[],uint256[],uint256,uint256)
-          handler: handleAddLiquidity
-        - event: RemoveLiquidity(indexed address,uint256[],uint256)
-          handler: handleRemoveLiquidity
-        - event: RemoveLiquidityImbalance(indexed address,uint256[],uint256[],uint256,uint256)
-          handler: handleRemoveLiquidityImbalance
-        - event: RemoveLiquidityOne(indexed address,uint256,uint256,uint256,uint256)
-          handler: handleRemoveLiquidityOne
-        - event: TokenSwap(indexed address,uint256,uint256,uint128,uint128)
-          handler: handleTokenSwap
-        - event: TokenSwap(indexed address,uint256,uint256,uint128,uint128)
-          handler: handleTokenSwap
-        - event: TokenSwapUnderlying(indexed address,uint256,uint256,uint128,uint128)
-          handler: handleTokenSwapUnderlying
-      file: ./src/mappings/metaSwap.ts
-
-  - kind: ethereum/contract
-    name: JioD4Pool
-    network: mainnet
-    source:
-      address: "0x7fFd58B8DeEF68B1C0A98f2d06D7D35AB45CB407"
+      address: "0xA143065c3d14eDc0c981dbb95Fc9DF097CD1d734"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15623108
+      startBlock: 394583
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
@@ -109,66 +56,15 @@ dataSources:
       file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts
 
   - kind: ethereum/contract
-    name: JioUSDPoolV2
-    network: mainnet
+    name: Jio3fUSDPool
+    network: godwoken
     source:
-      address: "0xB53617cEEA4c2e65c5e40bcA74ca418C2F4C341c"
+      address: "0xd864F189Aa5F8a408BE9452C3DAe2D13eeAD9aF7"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15630526
+      startBlock: 394583
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
-      language: wasm/assemblyscript
-      entities:
-        - Swap
-        - SystemInfo
-        - Token
-        - NewAdminFeeEvent
-        - NewSwapFeeEvent
-        - RampAEvent
-        - StopRampAEvent
-        - AddLiquidityEvent
-        - RemoveLiquidityEvent
-        - FlashLoanEvent
-        - TokenExchange
-      abis:
-        - name: SwapFlashLoanNoWithdrawFee
-          file: ./abis/SwapFlashLoanNoWithdrawFee.json
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: NewAdminFee(uint256)
-          handler: handleNewAdminFee
-        - event: NewSwapFee(uint256)
-          handler: handleNewSwapFee
-        - event: RampA(uint256,uint256,uint256,uint256)
-          handler: handleRampA
-        - event: StopRampA(uint256,uint256)
-          handler: handleStopRampA
-        - event: AddLiquidity(indexed address,uint256[],uint256[],uint256,uint256)
-          handler: handleAddLiquidity
-        - event: RemoveLiquidity(indexed address,uint256[],uint256)
-          handler: handleRemoveLiquidity
-        - event: RemoveLiquidityImbalance(indexed address,uint256[],uint256[],uint256,uint256)
-          handler: handleRemoveLiquidityImbalance
-        - event: RemoveLiquidityOne(indexed address,uint256,uint256,uint256,uint256)
-          handler: handleRemoveLiquidityOne
-        - event: FlashLoan(indexed address,uint8,uint256,uint256,uint256)
-          handler: handleFlashLoan
-        - event: TokenSwap(indexed address,uint256,uint256,uint128,uint128)
-          handler: handleTokenSwap
-      file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts
-      
-  - kind: ethereum/contract
-    name: JioUSDPoolThirdParty
-    network: mainnet
-    source:
-      address: "0x1116898DdA4015eD8dDefb84b6e8Bc24528Af2d8"
-      abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15630526
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
@@ -211,15 +107,15 @@ dataSources:
       file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts
 
   - kind: ethereum/contract
-    name: JioFraxPoolThirdParty
-    network: mainnet
+    name: Jio2USDPool
+    network: godwoken
     source:
-      address: "0x13Cc34Aa8037f722405285AD2C82FE570bfa2bdc"
+      address: "0x387DAB4350fc1542c43f4a68F24ADe2Bc04B7EeF"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15630526
+      startBlock: 394583
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
@@ -259,18 +155,18 @@ dataSources:
           handler: handleFlashLoan
         - event: TokenSwap(indexed address,uint256,uint256,uint128,uint128)
           handler: handleTokenSwap
-      file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts              
+      file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts
 
   - kind: ethereum/contract
-    name: JioBTCPool
-    network: mainnet
+    name: Jio3multiChainUSDPool
+    network: godwoken
     source:
-      address: "0xc117B388e5951FD7484F4FCbc3a803ACC4632459"
+      address: "0x0235c45d8ee10BFA35B8805cBfE4E4C724147d60"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15623108
+      startBlock: 394583
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
@@ -313,15 +209,66 @@ dataSources:
       file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts    
 
   - kind: ethereum/contract
-    name: JioALETHPool
-    network: mainnet
+    name: JioBTCPool
+    network: godwoken
     source:
-      address: "0x0a644a073Bc75E38985784AE8bebc8EB11B09e75"
+      address: "0xf71D88751f8187B1ff229e0Ca423D42f7b79EF95"
       abi: SwapFlashLoanNoWithdrawFee
-      startBlock: 15623108
+      startBlock: 394583
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Swap
+        - SystemInfo
+        - Token
+        - NewAdminFeeEvent
+        - NewSwapFeeEvent
+        - RampAEvent
+        - StopRampAEvent
+        - AddLiquidityEvent
+        - RemoveLiquidityEvent
+        - FlashLoanEvent
+        - TokenExchange
+      abis:
+        - name: SwapFlashLoanNoWithdrawFee
+          file: ./abis/SwapFlashLoanNoWithdrawFee.json
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: NewAdminFee(uint256)
+          handler: handleNewAdminFee
+        - event: NewSwapFee(uint256)
+          handler: handleNewSwapFee
+        - event: RampA(uint256,uint256,uint256,uint256)
+          handler: handleRampA
+        - event: StopRampA(uint256,uint256)
+          handler: handleStopRampA
+        - event: AddLiquidity(indexed address,uint256[],uint256[],uint256,uint256)
+          handler: handleAddLiquidity
+        - event: RemoveLiquidity(indexed address,uint256[],uint256)
+          handler: handleRemoveLiquidity
+        - event: RemoveLiquidityImbalance(indexed address,uint256[],uint256[],uint256,uint256)
+          handler: handleRemoveLiquidityImbalance
+        - event: RemoveLiquidityOne(indexed address,uint256,uint256,uint256,uint256)
+          handler: handleRemoveLiquidityOne
+        - event: FlashLoan(indexed address,uint8,uint256,uint256,uint256)
+          handler: handleFlashLoan
+        - event: TokenSwap(indexed address,uint256,uint256,uint128,uint128)
+          handler: handleTokenSwap
+      file: ./src/mappings/swapFlashLoanNoWithdrawFee.ts    
+
+  - kind: ethereum/contract
+    name: JioETHPool
+    network: godwoken
+    source:
+      address: "0x033f6E08d2200aE022184C54A9950Bf03c9b4B6A"
+      abi: SwapFlashLoanNoWithdrawFee
+      startBlock: 394583
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Swap
